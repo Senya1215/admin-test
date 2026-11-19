@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f2f4f8;
+    color: #1a1a1a;
+    line-height: 1.5;
+    padding: 12px;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #20232a;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px 16px;
+    border: 2px solid #c7ccd6;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    transition: all 0.15s ease;
+}
+
+.tab:hover {
+    border-color: #4a7cf0;
+    color: #4a7cf0;
+}
+
+.tab.active {
+    background: #4a7cf0;
+    border-color: #4a7cf0;
+    color: #fff;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 14px;
+    background: #22a06b;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background 0.15s ease;
+}
+
+.generate-btn:hover {
+    background: #1b8557;
+}
+
+.progress {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+/* Карточка */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card-header:hover {
+    background: #f7f9fc;
+}
+
+.question-text {
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+.toggle {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eef1f7;
+    color: #4a7cf0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.answer {
+    display: none;
+    padding: 0 16px 16px;
+    font-size: 0.95rem;
+    color: #333;
+    white-space: pre-wrap;
+    border-top: 1px solid #eef1f7;
+    padding-top: 12px;
+}
+
+.answer.open {
+    display: block;
+}
